@@ -290,13 +290,12 @@ class Ui_MainWindow(object):
                 background-color: #f0f0f0;  # Table background color
                 border: 2px solid #8f8f8f;  # Outer border of the table
             }
-        
         """)
 
         # Create QLineEdit instance
-        self.text_box = QLineEdit(self)
+        self.text_box = QLineEdit(self.centralwidget)
         self.text_box.setPlaceholderText("1: for  buried, 2: for surface")  # Add a placeholder
-        self.text_box.setGeometry(50, 50, 300, 30)  # Position and size
+        self.text_box.setGeometry(810, 100, 150, 40)  # Position and size
 
         # Connect a signal to print the text when it changes
         self.text_box.textChanged.connect()
